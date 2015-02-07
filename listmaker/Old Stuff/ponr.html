@@ -1,0 +1,263 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<style>
+	@import url(http://fonts.googleapis.com/css?family=Lato|Oswald:400,300,700);
+	body,html{
+		margin: 0px;
+		padding: 0px;
+		font-family: 'Oswald', sans-serif;
+		font-weight: 400;
+		background:
+			radial-gradient(black 15%, transparent 16%) 0 0,
+			radial-gradient(black 15%, transparent 16%) 8px 8px,
+			radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+			radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+		background-color:#282828;
+		background-size:16px 16px;
+	}
+	.container{
+		height: 150px;
+		background-color: #999;
+		width: 960px;
+		margin: 20px auto;
+	}
+	.blackbox{
+		width: 100px;
+		height: 100px;
+		background-color: #222;
+		color: #c2c2c2;
+		padding: 25px;
+		display: inline-block;
+		float: left;
+	}
+	.dateBox{
+		width: 100px;
+		height: 100px;
+		font-family: 'Oswald', sans-serif;
+		font-weight:400;
+		text-align: center; 
+	}
+	.date{
+		/*real deal here*/
+		font-size:46px;
+		transform:scale(1,1.5);
+		-webkit-transform:scale(1,1.5);
+		-moz-transform:scale(1,1.5);
+		-ms-transform:scale(1,1.5); 
+		-o-transform:scale(1,1.5);
+		color:#444;
+	}
+	.venue{
+		float: left;
+		width: 400px;
+		margin: 8px 0px 0px 8px;
+		color: #eee;
+	}
+	.bandsContainer{
+		float: left;
+		margin-left: 8px;
+		height: 110px;
+		width: 550px;
+		font-size: 60px;
+	}
+	.bands{
+		
+	}
+	.bandsColumn{
+		width: 275px;
+		height: 110px;
+		float: left;
+	}
+	.bandsColumn3{
+		width: 183px;
+		height: 110px;
+		float: left;
+	}
+	.attribute{
+		float: left;
+		height: 80px;
+		padding-top: 30px;
+		width: 40px;
+		margin: 0px 4px;
+		text-align: center;
+		color: #666;
+	}
+</style>
+<link type="text/css" rel="stylesheet" href="customthings.css" />
+<script>
+	function adjustHeights(elem) {
+		var fontstep = 1;
+		if ($(elem).height()>$(elem).parent().height() || $(elem).width()>$(elem).parent().width()) {
+			$(elem).css('font-size',(($(elem).css('font-size').substr(0,2)-fontstep)) + 'px').css('line-height',(($(elem).css('font-size').substr(0,2))) + 'px');
+			adjustHeights(elem);
+		}
+	}
+	
+	jQuery(document).ready(function($){
+		$('.bands').each(function() {adjustHeights($(this));});
+		$('.bandsColumn').each(function() {adjustHeights($(this));});
+	});
+</script>
+</head>
+
+<body>
+
+	<div style="width:100%; height: 225px; text-align: center; padding-top: 77px;font-size:80px; text-shadow: #fff 1px;color:#fff;">HellaShows<div style="height:2px;width:600px;background-color:#fff; margin:0px auto 20px auto;"></div><font style="font-family:Lato;font-size:24px;color:#B02B00;">(alpha)</font></div>
+	<div class="container">
+        <div class="blackbox">
+            <div class="dateBox">
+                <div class="date1">10/31</div>
+                <div class="friday">FRIDAY</div>
+            </div>
+        </div>
+        <span class="venue">Bottom of the Hill, SF <font size="-1" color="#ccc">Doors at 7pm, Show at 8pm</font></span>
+        <div class="bandsContainer">
+            <div class="bands">Band 1</div>
+        </div>
+        <div class="attribute">A/A</div>
+        <div class="attribute">@</div>
+        <div class="attribute">TX</div>
+        <div class="attribute">NIO</div>
+        <div class="attribute">NOTES</div>
+    </div>
+    
+    <div class="container">
+        <div class="blackbox">
+            <div class="dateBox">
+                <div class="date2">4/31</div>
+                <div class="saturday">SATURDAY</div>
+            </div>
+        </div>
+         <span class="venue">Bottom of the Hill, SF <font size="-1" color="#ccc">Doors at 7pm, Show at 8pm</font></span>
+        <div class="bandsContainer">
+            <div class="bands">Band 1<br />Band 2</div>
+        </div>
+        <div class="attribute">A/A</div>
+        <div class="attribute">@</div>
+        <div class="attribute">TX</div>
+        <div class="attribute">NIO</div>
+        <div class="attribute">NOTES</div>
+    </div>
+    
+    <div class="container">
+        <div class="blackbox">
+            <div class="dateBox">
+                <div class="date3">6/31</div>
+                <div class="sunday">SUNDAY</div>
+            </div>
+        </div>
+        <span class="venue">Bottom of the Hill, SF <font size="-1" color="#ccc">Doors at 7pm, Show at 8pm</font></span>
+        <div class="bandsContainer">
+        	<div class="bands">Band 1<br />Band 2<br />Band 3
+            </div>
+        </div>
+        <div class="attribute">A/A</div>
+        <div class="attribute">@</div>
+        <div class="attribute">TX</div>
+        <div class="attribute">NIO</div>
+        <div class="attribute">NOTES</div>
+    </div>
+    
+    <div class="container">
+        <div class="blackbox">
+            <div class="dateBox">
+                <div class="date4">12/21</div>
+                <div class="monday">MONDAY</div>
+            </div>
+        </div>
+        <span class="venue">Bottom of the Hill, SF <font size="-1" color="#ccc">Doors at 7pm, Show at 8pm</font></span>
+        <div class="bandsContainer">
+        	<div class="bandsColumn">
+        		<div class="bands"> 
+                	Band 1<br />Band 2<br />Band 3<br />Band 4
+            	</div>
+            </div>
+            <div class="bandsColumn">
+            	<div class="bands">Brigid Dawson<br />Bob Reed</div>
+            </div>
+        </div>
+		<div class="attribute">A/A</div>
+        <div class="attribute">@</div>
+        <div class="attribute">TX</div>
+        <div class="attribute">NIO</div>
+        <div class="attribute">NOTES</div>
+    </div>
+    
+    <div class="container">
+        <div class="blackbox">
+            <div class="dateBox">
+                <div class="date5">2/28</div>
+                <div class="tuesday">TUESDAY</div>
+            </div>
+        </div>
+    	<span class="venue">Bottom of the Hill, SF <font size="-1" color="#ccc">Doors at 7pm, Show at 8pm</font></span>
+        <div class="bandsContainer">
+        	<div class="bandsColumn">
+        		<div class="bands">The Decemberists<br />Abominable Putridity<br />Vader</div>
+            </div>
+            <div class="bandsColumn">
+            	<div class="bands">Arcade Fire<br />The Elements of Surprise<br />Yet Another Cool Band</div>
+            </div>
+        </div>
+        <div class="attribute">A/A</div>
+        <div class="attribute">@</div>
+        <div class="attribute">TX</div>
+        <div class="attribute">NIO</div>
+        <div class="attribute">NOTES</div>
+    </div>
+    
+    <div class="container">
+        <div class="blackbox">
+            <div class="dateBox">
+                <div class="dateTest">1/1</div>
+                <div class="wednesday">WEDNESDAY</div>
+            </div>    
+        </div>
+        <span class="venue">Bottom of the Hill, SF <font size="-1" color="#ccc">Doors at 7pm, Show at 8pm</font></span>
+        <div class="bandsContainer">
+        	<div class="bandsColumn">
+        		<div class="bands">The Decemberists<br />Abominable Putridity<br />Vader<br />DJ Dougpound</div>
+            </div>
+            <div class="bandsColumn">
+            	<div class="bands">Inanimate Existence<br />The Pecan Sandies<br />Taylor Swift<br />Belle and Sebastian</div>
+            </div>
+        </div>
+        <div class="attribute">A/A</div>
+        <div class="attribute">@</div>
+        <div class="attribute">TX</div>
+        <div class="attribute">NIO</div>
+        <div class="attribute">NOTES</div>
+    </div>
+    
+    <div class="container">
+        <div class="blackbox">
+            <div class="dateBox">
+                <div class="date7">9/22</div>
+                <div class="thursday">THURSDAY</div>
+            </div>
+        </div>
+        <span class="venue">Bottom of the Hill, SF <font size="-1" color="#ccc">Doors at 7pm, Show at 8pm</font></span>
+        <div class="bandsContainer">
+        	<div class="bandsColumn3">
+        		<div class="bands">Modest Mouse<br />Foo Fighters<br />Decrepit Birth (SJ)</div>
+            </div>
+            <div class="bandsColumn3">
+            	<div class="bands">Slipknot<br />Buddy Holly Zombie Holocoaust<br />This great band<br />Another band</div>
+            </div>
+            <div class="bandsColumn3">
+            	<div class="bands">Free Wilzyx<br />Mister Heavenly<br />Death From Above 1979<br />The Appilacian Station</div>
+            </div>
+        </div>
+        <div class="attribute">A/A</div>
+        <div class="attribute">@</div>
+        <div class="attribute">TX</div>
+        <div class="attribute">NIO</div>
+        <div class="attribute">NOTES</div>
+    </div>
+    
+</body>
+</html>

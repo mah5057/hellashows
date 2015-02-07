@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>HellaShows - 404</title>
+<meta name="description" content="HellaShows: A Handy Guide to the Bay Area Music Scene" />
+<link rel="icon" type="image/png" href="./favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="./favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="./favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="./favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="./favicon-128.png" sizes="128x128" />
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+	<div id="title">HELLA<font color="#999999">SHOWS</font></div>
+	<div class="container">
+		<div class="blackbox" style="padding: 0px; height: 150px; width: 150px; text-align: center; color: #999;">
+			<div style="font-size: 80px; display: block;">404</div>
+			<div style="font-size: 19px; display: block; margin-top: -20px; transform: scale(1, 1.4); color:#444;">FILE NOT FOUND</div>
+		</div>
+		<h1 style="padding: 15px 0px 0px 0px; margin: 0px; font-size:36px;">Wrong neighborhood, pal.</h1>
+		<p style="margin: 0px; font-size: 30px; top: -9px; position: relative; font-weight: 200; color: #333;">The page you're looking for doesn't exist! Maybe try our <a style="color:#c0362c; font-weight: 400;" href="http://www.hellashows.com">homepage?</a></p>
+	</div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@import url(http://fonts.googleapis.com/css?family=Lato|Oswald:400,300,700);
+	body,html{
+		margin: 0px;
+		padding: 0px;
+		font-family: 'Oswald', sans-serif;
+		font-weight: 400;
+		background-color:#444;
+	}
+	.container{
+		height: 150px;
+		background-color: #999;
+		width: 960px;
+		margin: 20px auto;
+		/*background-image: url('buttons.png');
+		background-position: right;
+		background-repeat: no-repeat;
+		*/
+	}
+	.blackbox{
+		width: 100px;
+		height: 100px;
+		background-color: #222;
+		color: #c2c2c2;
+		padding: 25px;
+		display: inline-block;
+		float: left;
+	}
+	.dateBox{
+		width: 100px;
+		height: 100px;
+		font-family: 'Oswald', sans-serif;
+		font-weight:400;
+		text-align: center; 
+	}
+	.date{
+		/*real deal here*/
+		font-size:46px;
+		transform:scale(1,1.5);
+		-webkit-transform:scale(1,1.5);
+		-moz-transform:scale(1,1.5);
+		-ms-transform:scale(1,1.5); 
+		-o-transform:scale(1,1.5);
+		color:#444;
+	}
+	.venue{
+		float: left;
+		width: 782px;
+		margin: 8px 0px 0px 8px;
+		color: #eee;
+	}
+	.bandsContainer{
+		float: left;
+		margin-left: 8px;
+		height: 109px;
+		width: 792px;
+		font-size: 60px;
+	}
+	.bands2Column{
+		float: left;
+		margin-left: 8px;
+		height: 109px;
+		width: 396px;
+		font-size: 60px;
+	}
+	.bands3Column{
+		float: left;
+		margin-left: 8px;
+		height: 109px;
+		width: 256px;
+		font-size: 60px;
+	}
+	.containerFix1{
+		float: left;
+		margin-left: 8px;
+		height: 109px;
+		width: 762px;
+		font-size: 88px;
+		padding-top:8px;
+	}

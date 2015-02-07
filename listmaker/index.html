@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+<link type="text/css" rel="stylesheet" href="css/dates.css" />
+<link type="text/css" rel="stylesheet" href="css/customthings.css" />
+<title>Hellashows Tester</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+    	function writeDates(){
+			for(i = 1; i<=12; i++){
+				for(j = 1; j<=31; j++){
+					document.body.innerHTML += '<div class="container"><div class="blackbox"><div class="dateBox"><div class="d'+i+'-'+j+'">'+i+'/'+j+'</div><div class="wednesday">WEDNESDAY</div></div></div><span class="venue"><div class="containerFix1"><div class="bands"></div></div></div>';
+				}
+			}
+		}
+		
+    </script>
+</head>
+
+<body onload="writeDates();">
+</body>
+</html>
