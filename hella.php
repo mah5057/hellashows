@@ -13,7 +13,7 @@
 	$toValue = 'To';
 	
 	if(count($_GET) == 0){
-		$query.=" WHERE DAY >= strftime('%Y-%m-%d', datetime('now','-1 hours'))";
+		$query.=" WHERE DAY >= strftime('%Y-%m-%d', datetime('now')) ORDER BY date(DAY)";
 	}
 	else $titleAddendum = ' - Search Results';
 	
@@ -63,11 +63,11 @@
 		}
 		
 		if(isset($_GET['previousShows'])){
-			array_push($sqlArgs,"DAY < strftime('%Y-%m-%d', datetime('now','-1 hours'))");
+			array_push($sqlArgs,"DAY < strftime('%Y-%m-%d', datetime('now'))");
 			$orderDescend = true;
 		}
 		else{
-			array_push($sqlArgs,"DAY >= strftime('%Y-%m-%d', datetime('now','-1 hours'))");
+			array_push($sqlArgs,"DAY >= strftime('%Y-%m-%d', datetime('now'))");
 		}
 		
 		//Gets Free
