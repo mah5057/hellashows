@@ -1,4 +1,3 @@
-//HellaShows
 <?php
 	$ageValues = array();
 	$sqlArgs = array();
