@@ -64,11 +64,11 @@
 		}
 		
 		if(isset($_GET['previousShows'])){
-			array_push($sqlArgs,"DAY < strftime('%Y-%m-%d', datetime('now'))");
+			array_push($sqlArgs,"DAY < strftime('%Y-%m-%d', datetime('now'," . $tz_offset . "))");
 			$orderDescend = true;
 		}
 		else{
-			array_push($sqlArgs,"DAY >= strftime('%Y-%m-%d', datetime('now'))");
+			array_push($sqlArgs,"DAY >= strftime('%Y-%m-%d', datetime('now'," . $tz_offset . "))");
 		}
 		
 		//Gets Free
