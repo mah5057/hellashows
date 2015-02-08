@@ -11,9 +11,10 @@
 	$pitHand = 'hand-g.png';
 	$fromValue = 'From';
 	$toValue = 'To';
+	$tz_offset = '\'-8 hours\'';
 	
 	if(count($_GET) == 0){
-		$query.=" WHERE DAY >= strftime('%Y-%m-%d', datetime('now'))";
+		$query.=" WHERE DAY >= strftime('%Y-%m-%d', datetime('now'," . $tz_offset . ")) ORDER BY date(DAY)";
 	}
 	else $titleAddendum = ' - Search Results';
 	

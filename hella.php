@@ -11,9 +11,10 @@
 	$pitHand = 'hand-g.png';
 	$fromValue = 'From';
 	$toValue = 'To';
+	$tz_offset = '\'-8 hours\'';
 	
 	if(count($_GET) == 0){
-		$query.=" WHERE DAY >= strftime('%Y-%m-%d', datetime('now')) ORDER BY date(DAY)";
+		$query.=" WHERE DAY >= strftime('%Y-%m-%d', datetime('now'," . $tz_offset . ")) ORDER BY date(DAY)";
 	}
 	else $titleAddendum = ' - Search Results';
 	
@@ -63,11 +64,11 @@
 		}
 		
 		if(isset($_GET['previousShows'])){
-			array_push($sqlArgs,"DAY < strftime('%Y-%m-%d', datetime('now'))");
+			array_push($sqlArgs,"DAY < strftime('%Y-%m-%d', datetime('now'," . $tz_offset . "))");
 			$orderDescend = true;
 		}
 		else{
-			array_push($sqlArgs,"DAY >= strftime('%Y-%m-%d', datetime('now'))");
+			array_push($sqlArgs,"DAY >= strftime('%Y-%m-%d', datetime('now'," . $tz_offset . "))");
 		}
 		
 		//Gets Free
